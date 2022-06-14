@@ -1,4 +1,5 @@
 import * as THREE from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 let Mesh;
 let light;
@@ -19,8 +20,8 @@ function setLight(){
 }
 
 function loadGLTF(){
-    let doughnutLoader = new THREE.GLTFLoader();
-    doughnutLoader.load ('src/images/doughnut.glb'), function (gltf){
+    let doughnutLoader = new GLTFLoader();
+    doughnutLoader.load ('/src/images/doughnut.glb'), function (gltf){
         Mesh = gltf.scene;
         Mesh.scale.set(0.2, 0.2, 0.2);
         scene.add(Mesh);
@@ -28,13 +29,11 @@ function loadGLTF(){
         Mesh.position.y = 10;
         Mesh.position.z = 15;
     
-    }, undefined, function (error){
-        console.log(error)
     }
 }
 
 function animate(){
-    requesstAnimationFrame(animate);
+    requestAnimationFrame(animate);
     if(Mesh && Mesh.rotation){
         MeshRotation.y -= 0.005;
     }

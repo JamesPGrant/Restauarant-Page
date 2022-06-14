@@ -26,7 +26,7 @@ module.exports = {
                 use:
                 [
                     {
-                        loader: 'file-loader',
+                        loader: 'gltf-webpack-loader',
                         options:
                         {
                             outputPath: 'assets/models/'
@@ -35,10 +35,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(gltf)$/,
+                test: /\.(glb|gltf)$/,
                 use: [
                     {
-                        loader:"gltf-webpack-loader"
+                        loader:"file-loader",
+                        options:{
+                            outputPath: 'assets/models/'
+                        }
                     }
                 ]
             },
@@ -52,15 +55,9 @@ module.exports = {
                 ]
             },
             {
-                test:/\.(glb)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {}
-                    }
-                ]
+                test:/\.css$/i,
+                use: ["style-loader", "css-loader"],
             }
-
         ]
     }
 }
