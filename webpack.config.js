@@ -17,4 +17,51 @@ module.exports = {
             template: 'src/template.html',
         }),
     ],
+    module:
+    {
+        rules:
+        [
+            {
+                test: /\.(glb|gltf)$/,
+                use:
+                [
+                    {
+                        loader: 'file-loader',
+                        options:
+                        {
+                            outputPath: 'assets/models/'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(gltf)$/,
+                use: [
+                    {
+                        loader:"gltf-webpack-loader"
+                    }
+                ]
+            },
+            {
+                test:/\.(bin)$/,
+                use:[
+                    {
+                        loader:'file-loader',
+                        options: {}
+                    }
+                ]
+            },
+            {
+                test:/\.(glb)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
+                ]
+            }
+
+        ]
+    }
 }
+

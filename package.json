@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/JamesPGrant/Restauarant-Page#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.3.0",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "three": "^0.141.0"
