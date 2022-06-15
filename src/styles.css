@@ -1,17 +1,143 @@
 body{
     margin:0;
     padding: 0;
+    display:block;
+    background-image: url('../src/images/DoughnutCooking.png');
+    background-size:cover;
+    height:100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
 }
+
+.heading{
+font-size:50px;
+}
+
+.containerContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 .container{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.6);
 }
 
-.contentContainer{
-    background-color:rgba(0, 0, 0, 0.8);
+.container button{
+    background: none;
     color:white;
-    display:grid;
-    grid-template: 1fr 1fr/ 1fr 1fr
+    border:none;
+    font-size:26px;
+    transition: 0.5s;
 }
+
+.container button:hover{
+    color:#ef4444;
+    font-size:36px;
+    text-decoration:underline;
+    transform: translateY(25%);
+    transform: translateZ(100%);
+}
+#menuAfter{
+    display:grid;
+    align-items:start;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 
+}
+
+#flexContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.contentContainer{
+    background-color:rgba(0, 0, 0, 0.6);
+    color:white;
+    width:75%;
+    height:100%;
+    margin-top:10%;
+}
+
+.doughnutMenu1 img{
+    height:200px;
+    width:300px;
+}
+
+.doughnutMenu2 img{
+    height:200px;
+    width:300px;
+}
+
+.vanillaDoughnut,
+.purpDoughnut,
+.cherryDoughnut,
+.lemonDoughnut{
+    height:250px;
+    width:300px;
+}
+
+#doughnut1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:25px;
+}
+
+
+.aboutDiv h1{
+text-align:center;
+}
+
+.aboutDivInfo{
+    width:50%;
+}
+
+.aboutDivInfo p{
+font-size: 22px;
+}
+
+.forms{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+
+.forms label{
+    margin-top: 1rem;
+}
+
+.forms Button{
+    background: none;
+    color:white;
+    border:none;
+    font-size:26px;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    transition: 0.5s;
+    
+}
+
+.forms Button::before{
+content:'<';
+}
+
+.forms Button::after{
+    content:'>'
+}
+
+.forms Button:hover{
+    transform: translateZ(25%);
+    font-size:36px;
+    color:#ef4444;
+}
+
+.forms{
+    margin-right:20px;
+}
+
