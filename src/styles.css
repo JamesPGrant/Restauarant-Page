@@ -9,10 +9,13 @@ body{
     display:flex;
     flex-direction:column;
     align-content:center;
+    background-position: bottom;
+    background-attachment: scroll;
+    
 }
 
 .heading{
-font-size:50px;
+    font-size:50px;
 }
 
 .containerContainer{
@@ -22,6 +25,7 @@ font-size:50px;
 }
 
 .container{
+    position:static;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -48,7 +52,8 @@ font-size:50px;
 #menuAfter{
     display:grid;
     align-items:start;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    overflow:auto;
 }
 
 #flexContainer{
@@ -56,37 +61,43 @@ font-size:50px;
     flex-direction:column;
     align-items:center;
 }
-.contentContainer{
+.contentContainer {
     background-color:rgba(0, 0, 0, 0.6);
     color:white;
     width:75%;
     height:100%;
-    margin-top:10%;
+    margin-top:5%;
 }
 
 .doughnutMenu1 img{
-    height:200px;
-    width:300px;
+    height:100px;
+    width:175px;
 }
 
 .doughnutMenu2 img{
-    height:200px;
-    width:300px;
+    height:100px;
+    width:175px;
 }
 
 .vanillaDoughnut,
 .purpDoughnut,
 .cherryDoughnut,
 .lemonDoughnut{
-    height:250px;
-    width:300px;
+    height:100px;
+    width:175px;
 }
 
 #doughnut1{
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
     font-size:25px;
+}
+
+#doughnut1 p{
+    width: 225px;
+    height:28px;
 }
 
 
@@ -141,3 +152,6 @@ content:'<';
     margin-right:20px;
 }
 
+.doughnut_container{
+    height: 100px;
+}
