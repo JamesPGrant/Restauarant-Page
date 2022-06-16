@@ -62,6 +62,14 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type:'asset/resource',
+                resolve: {    
+                    modules: [
+                      /* assuming that one up is where your node_modules sit,
+                         relative to the currently executing script
+                      */
+                      path.join(__dirname, '../node_modules')
+                    ]
+                  }
             },
         ]
     }

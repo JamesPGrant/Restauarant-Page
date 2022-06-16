@@ -1,7 +1,9 @@
 import createElement from '../createElement'
 const contentContainer = document.querySelector('.contentContainer')
+//import cherry from  '../src/images/choc.png'
 
 function foodItems(){
+
     const menuBtn = document.querySelector('.menu-item1')
     const doughnutDiv = createElement('div', {class:'doughnutMenu1', id: 'doughnut1'})
     const doughnutDiv2 = createElement('div', {class:'doughnutMenu2', id: 'doughnut1'})
