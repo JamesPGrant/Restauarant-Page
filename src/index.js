@@ -4,7 +4,7 @@ import contact from './menu-pages/contact'
 import aboutPage from './menu-pages/about'
 import foodItems from './menu-pages/food'
 import "./styles.css";
-import images from './images'
+import choc from '../src/images/choc.png'
 const container = document.querySelector('.container')
 
 

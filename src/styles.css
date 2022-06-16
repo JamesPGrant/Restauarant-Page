@@ -4,7 +4,7 @@ body{
     display:block;
     background-image: url('../src/images/DoughnutCooking.png');
     background-size:cover;
-    height: 102vh;
+    height: 100vh;
     background-repeat: no-repeat;
     display:flex;
     flex-direction:column;
@@ -154,4 +154,11 @@ content:'<';
 
 .doughnut_container{
     height: 100px;
+}
+
+.footer{
+
+    background-color:black;
+    color:white;
+    text-align:center;
 }
