@@ -8,7 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesPGrant/Restauarant-Page.git"
+    "url": "git+https://github.com/JamesPGrant/Restauarant-Page.git",
+    "copy": "copyfiles -f ./src/*.html ./dist && copyfiles -f ./src/image/* ./dist/img && echo 'all dist copied.'",
+    "build": "npm run clean && npm run dist"
   },
   "keywords": [],
   "author": "",

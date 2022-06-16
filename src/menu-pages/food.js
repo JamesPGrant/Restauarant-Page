@@ -12,12 +12,12 @@ function foodItems(){
     const doughnutDiv5= createElement('div', {class:'doughnutMenu5', id: 'doughnut1'})
     const doughnutDiv6 = createElement('div', {class:'doughnutMenu6', id: 'doughnut1'})
     const doughnutDiv7= createElement('div', {class:'doughnutMenu7', id: 'doughnut1'})
-    const chocImage = createElement('img', {class:'chocolateDoughnut', id:'doughnut1', src: '../src/images/choc.png'})
-    const strawImage = createElement('img', {class:'strawberryDoughnut', id:'doughnut1', src: '../src/images/strawberry.png'})
-    const lemImage = createElement('img', {class:'lemonDoughnut', id:'doughnut1', src: '../src/images/lemon.png'})
-    const vanImage = createElement('img', {class:'vanillaDoughnut', id:'doughnut1', src: '../src/images/vanilla.png'})
-    const purpImage =  createElement('img', {class:'purpDoughnut', id:'doughnut1', src: '../src/images/purple.png'})
-    const cherryImage = createElement('img', {class:'cherryDoughnut', id:'doughnut1', src: '../src/images/cherry.png'})
+    const chocImage = createElement('img', {class:'chocolateDoughnut1', id:'doughnut1'})
+    const strawImage = createElement('img', {class:'strawberryDoughnut1', id:'doughnut1'})
+    const lemImage = createElement('img', {class:'lemonDoughnut1', id:'doughnut1'})
+    const vanImage = createElement('img', {class:'vanillaDoughnut1', id:'doughnut1'})
+    const purpImage =  createElement('img', {class:'purpDoughnut1', id:'doughnut1'})
+    const cherryImage = createElement('img', {class:'cherryDoughnut1', id:'doughnut1'})
     const chocolateDoughnut = createElement('p', {class:'chocolateDoughnut', id:'doughnut1'})
     const strawberryDoughnut = createElement('p', {class:'strawberryDoughnut ', id:'doughnut1'})
     const vanillaDoughnut = createElement('p', {class:'vanillaDoughnut', id:'doughnut1'})
@@ -46,7 +46,6 @@ function foodItems(){
         doughnutDiv4.appendChild(lemonDoughnut);
         doughnutDiv5.appendChild(purpleDoughnut);
         doughnutDiv6.appendChild(cherryDoughnut);
-        
         chocolateDoughnut.textContent = 'Chocolate Doughnut'
         strawberryDoughnut.textContent = 'Strawberry Doughnut'
         vanillaDoughnut.textContent = 'Vanilla Doughnut'
