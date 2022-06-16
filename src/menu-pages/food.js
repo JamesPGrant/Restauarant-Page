@@ -58,6 +58,10 @@ function foodItems(){
             contentContainer.setAttribute('id', 'menuAfter')
             return
         }
+        if(document.body.style.height === '100%'){
+            document.body.style.height = '100vh'
+            return
+        }
     })
 
 }

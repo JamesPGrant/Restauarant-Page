@@ -28,6 +28,11 @@ function aboutPage(){
             contentContainer.setAttribute('id', 'flexContainer')
             return
         }
+        if(document.body.style.height === '100vh'){
+            document.body.style.height = '100%'
+            return
+        }
+        
     })
 }
 
