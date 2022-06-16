@@ -4,6 +4,7 @@ import contact from './menu-pages/contact'
 import aboutPage from './menu-pages/about'
 import foodItems from './menu-pages/food'
 import "./styles.css";
+import images from './images'
 const container = document.querySelector('.container')
 
 
